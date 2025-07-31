@@ -5,6 +5,7 @@
     --cor-fonte-principal: #0f0f0f;
     --cor-fonte-secundaria: #1b1c25;
     --cor-fonte-terciaria: #F2F2F2;
+    --cor-fonte-quaternaria: #515153;
 }
 
 *{
@@ -32,6 +33,29 @@ html, body{
     padding: 12px 12px;
     border-radius: 10px;
 }
+
+div.titulo{
+    display: flex;
+    flex-direction: row;
+}
+
+div.titulo h2{
+    background-color: var(--cor-principal);
+    color: var(--cor-fonte-principal);
+    font-size: 40px;
+    padding: 2px 8px;
+    border-radius: 8px;
+}
+
+div.titulo p{
+    color: var(--cor-fonte-quaternaria);
+    font-size: 14px;
+    padding-top: 12px;
+    padding-left: 10px;
+    max-width: 600px;
+}
+
+
 p{
     font-size: 18px;
 }
@@ -60,7 +84,6 @@ header div.navegacao div.logo a span{
 
 header div.desktop ul li{
     display: inline-block ;
-    margin-top: 10px;
 }
 
 header div.desktop ul li a{
@@ -103,3 +126,11 @@ header div.brands{
 }
 
 /* ===== ESTILIZAÇÃO DA SESSÃO SERVIÇOS  ===== */
+section.servicos div.card-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+section.servicos div.card-single{
+    width: 600px;
+}

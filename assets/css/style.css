@@ -1,0 +1,105 @@
+:root{
+    --cor-principal: #B9FF66;
+    --cor-secundaria: #191A23;
+    --cor-terciaria: #F3F3F3;
+    --cor-fonte-principal: #0f0f0f;
+    --cor-fonte-secundaria: #1b1c25;
+    --cor-fonte-terciaria: #F2F2F2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.btn-dark{
+    text-decoration: none;
+    color: var(--cor-fonte-terciaria);
+    background-color: var(--cor-secundaria);
+    padding: 12px 12px;
+    border-radius: 10px;
+}
+p{
+    font-size: 18px;
+}
+
+/* ===== ESTILIZAÇÃO DO HEADER  ===== */
+header div.mobile{
+    display: none;
+}
+
+header div.navegacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+header div.navegacao div.logo a{
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--cor-fonte-secundaria);
+}
+
+header div.navegacao div.logo a span{
+    color: #B9FF66;
+}
+
+header div.desktop ul li{
+    display: inline-block ;
+    margin-top: 10px;
+}
+
+header div.desktop ul li a{
+    text-decoration: none;
+    color: var(--cor-fonte-secundaria);
+    padding: 0 10px;
+}
+
+header div.destaque-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header div.header-text{
+    max-width: 500px;
+}
+
+header div.header-text h2{
+    font-size: 60px;
+    padding: 20px 0;
+    color: var(--cor-fonte-principal);
+}
+
+header div.header-text p{
+    font-size: 16px;
+    padding: 20px 0 30px 0;
+}
+
+header div.header-image img{
+    width: 500px;
+}
+
+header div.brands{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+/* ===== ESTILIZAÇÃO DA SESSÃO SERVIÇOS  ===== */

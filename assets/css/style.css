@@ -2,6 +2,7 @@
     --cor-principal: #B9FF66;
     --cor-secundaria: #191A23;
     --cor-terciaria: #F3F3F3;
+    --cor-quaternaria: #525252;
     --cor-fonte-principal: #0f0f0f;
     --cor-fonte-secundaria: #1b1c25;
     --cor-fonte-terciaria: #F2F2F2;
@@ -21,7 +22,7 @@ html, body{
 }
 
 .container{
-    max-width: 1280px;
+    max-width: 1440px;
     padding: 0 2%;
     margin: 0 auto;
 }
@@ -32,6 +33,18 @@ html, body{
     background-color: var(--cor-secundaria);
     padding: 12px 12px;
     border-radius: 10px;
+}
+
+.model1{
+    background-color: var(--cor-terciaria);
+}
+
+.model2 {
+    background-color: var(--cor-principal);
+}
+
+.model3, .model4 {
+    background-color: var(--cor-secundaria);
 }
 
 div.titulo{
@@ -55,10 +68,23 @@ div.titulo p{
     max-width: 600px;
 }
 
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 20px;
+}
 
 p{
     font-size: 18px;
 }
+
+a{
+    text-decoration: none;
+    color: var(--cor-fonte-principal);
+}
+
 
 /* ===== ESTILIZAÇÃO DO HEADER  ===== */
 header div.mobile{
@@ -126,11 +152,82 @@ header div.brands{
 }
 
 /* ===== ESTILIZAÇÃO DA SESSÃO SERVIÇOS  ===== */
+section.servicos{
+    margin-top: 20px;
+}
+
 section.servicos div.card-group{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around; 
+    margin-top: 30px;
 }
+
 section.servicos div.card-single{
     width: 600px;
+    height: 310px;
+    padding: 50px;
+    border: 1px solid var(--cor-quaternaria);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+section.servicos div.card-single div.content{
+    width: 210px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+section.servicos div.card-single div.content div.learn-more{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section.servicos div.card-single div.content div.learn-more img{
+    margin-right: 15px;
+    width: 41px;
+    height: 41px;
+}
+
+section.servicos div.card-single div.img{
+    width: 210px;
+}
+
+.model1 h4{
+    background: var(--cor-principal);
+}
+
+.model2 h4, .model3 h4{
+    background: var(--cor-terciaria);
+}
+
+.model4 h4{
+    background: var(--cor-principal);
+}
+
+.model3 a, .model4 a{
+    color: white;
+}
+
+/* ===== ESTILIZAÇÃO DA SESSÃO CTA 1  ===== */
+section.cta-1 div.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+    border-radius: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    height: 347px;
+}
+
+section.cta-1 div.text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
